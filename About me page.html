@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+</head>
+<div class="main">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: lightblue;
+        padding: 20px;
+        font-family: Arial;
+    }
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1 {
+        word-break: break-all;
+        font-size: 50px;
+    }
+    .row {
+      margin: 8px -16px;
+    }
+    .row,
+    .row>.column {
+      padding: 8px;
+    }
+    .column {
+      float: left;
+      width: 25%;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    content {
+      background-color: whitesmoke;
+      padding: 10px;
+    }
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 10%;
+      }
+    }
+    
+    #intro-text {
+        color: black;
+        text-align: left;
+        font-size: large;
+        border: 30px 40px 40px 30px;
+    }
+
+    #intro-container {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .intro-container-section {
+        display: flex;
+
+    }
+
+    .school-attended {
+        display: inline-flex;
+    }
+
+    #school-attended-table {
+        font-family: Arial;
+        border-collapse: collpase;
+        border-width: 100%;
+        background-color: whitesmoke;
+        text-align: left;
+
+    }
+
+    #school td,
+    #school th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    h3 {
+        color: black;
+        font-family: Arial;
+        text-align: left;
+    }
+
+    .content-padding {
+        background-color: whitesmoke;
+        padding: 10px;
+        display: flex;
+    }
+
+    #nav-section {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    #nav-section a {
+        color: black;
+        font-size: 25px;
+        font-family: Arial;
+    }
+</style>
+    <h1>Hear Here!</h1>
+    <hr>
+    <div id="nav-section">
+        <a href="index.html">
+            <h3>Home</h3>
+        </a>
+        <a href="About me page.html">
+            <h3>About me</h3>
+        </a>
+        <a href="Gallery.html">
+            <h3>Gallery</h3>
+        </a>
+        <a href="Contact.html">
+            <h3>Contact me</h3>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> 
+    <br>
+
+    <div id="intro-container">
+
+        <div class="intro-container-section">
+            <div>
+                <h2>Hey! Get to know me.</h2>
+                <p id="intro-text">
+                    My friends call me Cess short for my name Princess
+                    <br>
+                    I took up Finance as my major in college
+                    <br>
+                    From the province of Isabela
+                    <br>
+                    An aspiring frontend dev
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+
+                <div class="school-attended">
+
+                    <div>
+                        <h3> Schools attended!</h3>
+                        <table border="1">
+                            <thead>
+
+                                <table id="school-attended-table">
+                            </thead>
+                            <tr>
+                                <th>Level</th>
+                                <th>School</th>
+                                <th colspan="4">Year</th>
+                            </tr>
+                            <tr>
+                                <td>Primary</td>
+                                <td>Cauayan South Central School</td>
+                                <td>2002-2008</td>
+                            </tr>
+                            <tr>
+                                <td>Secondary</td>
+                                <td>Our Lady of the Pillar College Cauayan</td>
+                                <td>2008-2012</td>
+                            </tr>
+                            <tr>
+                                <td>Tertiary</td>
+                                <td>Far Eastern University - Manila</td>
+                                <td>2012-2016</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="intro-container-section">
+            <div class="content-padding">
+                <img src="coffee.jpg" alt="" title="" width="300" height="450" />
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+</div>
+</html>

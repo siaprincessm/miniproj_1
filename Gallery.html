@@ -1,0 +1,136 @@
+<!-- MAIN (Center website) -->
+<div class="main">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: lightblue;
+      padding: 20px;
+      font-family: Arial;
+    }
+
+    /* Center website */
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+
+    .row {
+      margin: 8px -16px;
+    }
+
+    /* Add padding BETWEEN each column (if you want) */
+    .row,
+    .row>.column {
+      padding: 8px;
+    }
+
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+    }
+
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Content */
+    .content {
+      background-color: whitesmoke;
+      padding: 10px;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 10%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+
+    #nav-section {
+      justify-content: space-between;
+      display: flex;
+    }
+
+    #nav-section a {
+      color: black;
+      font-size: 25px;
+      font-family: Arial;
+    }
+  </style>
+  <h1>Hobbies and Interest</h1>
+  <hr>
+  <div id="nav-section">
+    <a href="index.html">
+      <h3>Home</h3>
+    </a>
+    <a href="About me page.html">
+      <h3>About me</h3>
+    </a>
+    <a href="Gallery.html">
+      <h3>Gallery</h3>
+    </a>
+    <a href="Contact.html">
+      <h3>Contact me</h3>
+    </a>
+  </div>
+  <h2>What's keepin me busy</h2>
+  <p>Found myself drowned into mechanical keyboard when the pandemic hit. This is what's keepin me busy. What got me
+    here is the typing sound keyboards produce when typed.</p>
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="switch lubing.jpg" alt="lubing my switches" style="width:100%">
+        <h3>Lubing my keyboard</h3>
+        <p>Lubing my switches to improve the sounnd of my keyboard.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="keycaps.jpg" alt="changing my keycaps" style="width:100%">
+        <h3>Changing Keycaps</h3>
+        <p>Keycaps is 100% of the aesthetic of your keyboard.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="artisan.jpg" alt="Nature" style="width:100%">
+        <h3>Artisan Keycaps</h3>
+        <p>Some artisan keycaps I got from Shopee to make the keyboard more kawaii</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <video style="width:100%" controls>
+          <source src="typingtest.mp4" type="video/mp4">
+
+          </source>
+        </video>
+        <h3>Keyboard ASMR</h3>
+        <p>Here's a brown switch ASMR to bless your ears lol</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- END MAIN -->
+</div>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+</head>
+<div class="main">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightblue;
+        }
+
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+            font-family: Arial;
+        }
+        h3 {
+            font-family: Arial;
+        }
+        .row {
+            margin: 8px -16px;
+        }
+
+        .row,
+        .row>.column {
+            padding: 8px;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        #intro-section {
+            color: black;
+            font-size: 50pt;
+            text-align: center;
+        }
+
+        #nav-section {
+            justify-content: space-between;
+            display: flex;
+        }
+
+        #nav-section a {
+            color: black;
+            font-size: 25px;
+            font-family: Arial;
+        }
+
+        #proj-des {
+            border-collapse: collapse;
+            border-width: 100%;
+            background-color: whitesmoke;
+            text-align: center;
+        }
+    </style>
+    <h1>My attempt to code</h1>
+        <hr>
+         <div id="nav-section">
+            <a href="index.html"><h3>Home</h3></a>
+            <a href="About me page.html"><h3>About me</h3></a>
+            <a href="Gallery.html"><h3>Gallery</h3></a>
+            <a href="Contact.html"><h3>Contact me</h3></a>
+         </div>
+    <div id="proj-des">
+        <p> Hello this project is a requirement for Diretcho Trabaho</p>
+        <p>This miniproject is to create a personal website using CSS and HTML</p>
+    </div>
+</div>
+</body>
+</html>
